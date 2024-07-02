@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useCallback } from 'react';
 
 // Create the context
 const ApiContext = createContext();
@@ -9,13 +9,13 @@ export const ApiProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const fetchProducts = async (params) => {
+  const fetchProducts = useCallback(async (params) => {
     setLoading(true);
     setError(null);
 
     try {
       const queryString = new URLSearchParams(params).toString();
-      const response = await fetch(`/products/public/catalog?${queryString}`);
+      const response = await fetch(`http://3.88.1.181:8000/products/public/catalog?${queryString}`);
       const data = await response.json();
       setProducts(data);
     } catch (err) { 
@@ -23,7 +23,7 @@ export const ApiProvider = ({ children }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   return (
     <ApiContext.Provider value={{ products, loading, error, fetchProducts }}>
