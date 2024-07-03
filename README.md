@@ -1,7 +1,24 @@
-<<<<<<< HEAD
 # product-catalog-manager
 A product catalog manager built with react.js. Including features like; String search, Filter by quantity and supplier
-=======
+
+# Technologies
+React.js: Frontend library for building user interfaces.
+Ant Design: UI framework for React that provides pre-designed components.
+Context API: For state management across the application.
+
+
+# API Reference
+Fetch Products
+Endpoint: http://3.88.1.181:8000/products/public/catalog
+Method: GET
+Query Parameters:
+supplier: The supplier of the products (e.g., FragranceX, FragranceNet, Morris Costumes).
+search: The search string for filtering products by name or title.
+quantity_gt: Filter for products with quantity greater than this value.
+quantity_lt: Filter for products with quantity less than this value.
+cost_price_gt: Filter for products with cost price greater than this value .
+cost_price_lt: Filter for products with cost price less than this value.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +89,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> a9bb2dae7e9aff6a271f8b185dab170bd1e8a638
