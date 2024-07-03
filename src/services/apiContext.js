@@ -14,7 +14,11 @@ export const ApiProvider = ({ children }) => {
     setError(null);
 
     try {
-      const queryString = new URLSearchParams(params).toString();
+      const queryString = new URLSearchParams({
+        ...params,
+        ...(params.filters || {}),
+      }).toString();
+  
       const response = await fetch(`http://3.88.1.181:8000/products/public/catalog?${queryString}`);
       const data = await response.json();
       setProducts(data);
