@@ -1,6 +1,9 @@
 # product-catalog-manager
 A product catalog manager built with react.js for BLUETECH SOLUTIONS. Including features like; String search, Filter by quantity and supplier
 
+### Designed By Daniel Alamba Junior
+https://1dlamba.github.io/Daniel-Alamba/
+
 # Technologies
 React.js: Frontend library for building user interfaces.
 Ant Design: UI framework for React that provides pre-designed components.

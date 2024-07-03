@@ -50,15 +50,12 @@ const Tables = () => {
   const columns = [
     { title: 'SKU', dataIndex: 'SKU', key: 'SKU' },
     { title: 'Image', dataIndex: 'Image_1', render: theImageURL => <img alt={theImageURL} src={theImageURL} width={"100%"}/>, width: 70, },
-    // { title: 'Product Category', dataIndex: 'Product Category', key: 'Product Category' },
     { title: 'Brand', dataIndex: 'Brand', key: 'Brand' },
     { title: 'Title', dataIndex: 'Title', key: 'Title' },
     { title: 'supplier', dataIndex: 'supplier', key: 'supplier' },
     { title: 'Description', dataIndex: 'Description', key: 'Description' },
-    // { title: 'Year Introduced', dataIndex: 'Year Introduced', key: 'Year Introduced' },
     { title: 'Cost Price', dataIndex: 'Cost Price', key: 'Cost Price' },
     { title: 'Quantity', dataIndex: 'Quantity', key: 'Quantity' },
-    // { title: 'Catalog time', dataIndex: 'catalog time', key: 'catalog time' },
   ];
   
   return (
@@ -74,12 +71,19 @@ const Tables = () => {
           <Skeleton.Input active style={{ width: 200, marginRight: 8 }} />
 
           </div>
+        <div className=" d-flex  justify-content-between mx-auto my-1 " style={{ width: "90%"}} >
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+          <Skeleton.Input active style={{ width: 150, marginRight: 8 }} />
+</div>
           {[...Array(1)].map((_, index) => (
             <div key={index} className="skeleton-table-row mx-auto d-flex justify-content-between" style={{ width: "90%"}}>
+
               <Skeleton.Input active style={{ width: "90vw", marginRight: 20, height: "50vh" }} />
-              {/* <Skeleton.Input active style={{ width: 150, marginRight: 8, height: "50vh" }} />
-              <Skeleton.Input active style={{ width: 200, marginRight: 8, height: "50vh" }} />
-              <Skeleton.Input active style={{ width: 100, marginRight: 8, height: "50vh" }} /> */}
             </div>
           ))}
         </div>
