@@ -1,5 +1,5 @@
 # product-catalog-manager
-A product catalog manager built with react.js. Including features like; String search, Filter by quantity and supplier
+A product catalog manager built with react.js for BLUETECH SOLUTIONS. Including features like; String search, Filter by quantity and supplier
 
 # Technologies
 React.js: Frontend library for building user interfaces.
@@ -9,14 +9,23 @@ Context API: For state management across the application.
 
 # API Reference
 Fetch Products
+
 Endpoint: http://3.88.1.181:8000/products/public/catalog
+
 Method: GET
+
 Query Parameters:
+
 supplier: The supplier of the products (e.g., FragranceX, FragranceNet, Morris Costumes).
+
 search: The search string for filtering products by name or title.
+
 quantity_gt: Filter for products with quantity greater than this value.
+
 quantity_lt: Filter for products with quantity less than this value.
+
 cost_price_gt: Filter for products with cost price greater than this value .
+
 cost_price_lt: Filter for products with cost price less than this value.
 
 # Getting Started with Create React App

@@ -54,11 +54,11 @@ const Tables = () => {
     { title: 'Brand', dataIndex: 'Brand', key: 'Brand' },
     { title: 'Title', dataIndex: 'Title', key: 'Title' },
     { title: 'supplier', dataIndex: 'supplier', key: 'supplier' },
-    // { title: 'Description', dataIndex: 'description', key: 'description' },
+    { title: 'Description', dataIndex: 'Description', key: 'Description' },
     // { title: 'Year Introduced', dataIndex: 'Year Introduced', key: 'Year Introduced' },
     { title: 'Cost Price', dataIndex: 'Cost Price', key: 'Cost Price' },
     { title: 'Quantity', dataIndex: 'Quantity', key: 'Quantity' },
-    { title: 'Size', dataIndex: 'size', key: 'size' },
+    // { title: 'Catalog time', dataIndex: 'catalog time', key: 'catalog time' },
   ];
   
   return (
