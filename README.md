@@ -1,5 +1,5 @@
-# product-catalog-manager
-A product catalog manager built with react.js for BLUETECH SOLUTIONS. Including features like; String search, Filter by quantity and supplier
+# product-catalog-manager for BLUTECH
+A product catalog manager built with react.js for BLUTECH SOLUTIONS software engineer test project. Including features like; String search, Filter by quantity and supplier
 
 ### Designed By Daniel Alamba Junior
 https://1dlamba.github.io/Daniel-Alamba/
